@@ -318,7 +318,7 @@ nav span, #bottom-controls span {
 #bottom-controls {
     display: none !important;
     width: 98%;
-    background-color: var(--dark-blue2);
+    background-color: var(--black);
     height: 60px;
     border-radius: 5px;
     color: var(--white);
@@ -331,7 +331,6 @@ nav span, #bottom-controls span {
     position: fixed;
     bottom: 0;
     z-index: 200;
-    background-color: var(--dark-blue2);
     display: inline-block !important;
 }
 
@@ -362,6 +361,10 @@ footer i{
 }
 #like-dislike i:hover {
     color: var(--orange);
+}
+
+#like-dislike i:nth-child(3) {
+    display: none;
 }
 
 #controls{
@@ -441,6 +444,18 @@ footer i{
 }
 
 /* media queries for bottom controls */
+@media screen and (max-width: 992px) {
+    #text h4, #text h5{
+        font-size: 0.9em;
+    }
+    #like-dislike {
+        margin-left: 5px;
+    }
+    #song-details {
+        top: 5px;
+    }
+}
+
 @media screen and (max-width: 880px) {
     #bottom-controls {
         width: 90%;
@@ -458,7 +473,7 @@ footer i{
     #controls {
         left: 50%;
     }
-    #text h4, #text h5, #like-dislike i{
+    #text h4, #text h5{
         font-size: 0.8em;
     }
 }
@@ -470,29 +485,6 @@ footer i{
     }
     #controls {
         left: 45%;
-    }
-}
-
-@media screen and (max-width: 504px){ 
-    #controls-2 span {
-        padding-right: 6px !important;
-    }
-    #controls-2 span:nth-child(3) {
-        padding-left: 0px !important;
-    }
-    #controls-2 {
-        left: -15px;
-    }
-}
-@media screen and (max-width: 992px) {
-    #text h4, #text h5, #like-dislike i{
-        font-size: 0.9em;
-    }
-    #like-dislike {
-        margin-left: 5px;
-    }
-    #song-details {
-        top: 5px;
     }
 }
 
@@ -511,6 +503,18 @@ footer i{
     }
 }
 
+@media screen and (max-width: 504px){ 
+    #controls-2 span {
+        padding-right: 6px !important;
+    }
+    #controls-2 span:nth-child(3) {
+        padding-left: 0px !important;
+    }
+    #controls-2 {
+        left: -15px;
+    }
+}
+
 @media screen and (max-width: 450px) {
     #controls {
         display: none;
@@ -525,6 +529,13 @@ footer i{
         position: absolute;
         right: 2%;
         top: 10%;
+    }
+
+    #like-dislike i:nth-child(2) {
+        display: none;
+    }
+    #like-dislike i:nth-child(3) {
+        display: initial;
     }
 }
 
@@ -839,10 +850,7 @@ aside#aside-1 section h4 {
 
 #popular-artists .box:hover img{
     box-shadow: 0px 0px 13px 1px var(--orange);
-    transition: all 0.5s;
-}
-
-@media screen and (max-width: 380px) {
+    transition: all 0.4s;
 }
 
 #popular-artists .box:hover h6 {
@@ -860,7 +868,6 @@ aside#aside-1 section h4 {
     justify-content: space-evenly;
 }
 
-
 #genres #g-box {
     width: 100px;
     height: 100px;
@@ -876,8 +883,8 @@ aside#aside-1 section h4 {
 }
 
 #genres .box-container .box:hover img {
-    box-shadow: 3px 1px 3px 1px var(--white);
-    transition: all 0.5s;
+    box-shadow: 5px 0px 5px 0.1px var(--white);
+    transition: all 0.4s;
 }
 
 #genres #g-box #box-1 {
@@ -1072,8 +1079,11 @@ aside#aside-2 {
 @media screen and (max-width: 676px) {
     aside#aside-2 {
         position: relative;
-        width: 65%;
+        width: 80%;
+        padding-left: 5%;
+        padding-right: 5%;
         margin-bottom: 7vh;
+        height: 450px;
     }
 }
 
@@ -1082,6 +1092,7 @@ aside#aside-2 #head{
     width: 100%;
     position: relative;
     margin-bottom: 15px;
+    padding-top: 15px;    
 }
 
 #head #option {
@@ -1111,7 +1122,7 @@ aside#aside-2 #head{
     vertical-align: middle !important;
 }
 
-#queue-items div span:first-child span {
+#queue-items div span:first-child span:not(:nth-child(2)) {
     padding-right: 5px;
 }
 
@@ -1119,24 +1130,15 @@ aside#aside-2 #head{
     margin-left: 0;
     width: 15%;
 }
-.album-image i{
-    z-index: 1;
-    position: absolute;
-    top: 45%;
-    left: 47%;
-    display: none;
+
+#queue-items div span img {
+    width: 100%;
 }
 
 #queue-items .album-image i {
-    top: 40%;
-    left: 40%;
     font-size: 0.7em;
-}
-
-@media screen and (max-width:  768px) {
-    #queue-items .album-image i {
-        top: 35%;
-        left: 35%;
-        font-size: 0.7em;
-    }    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
