@@ -597,7 +597,7 @@ aside#aside-1 section h4 {
 }
 
 #img-2 img{
-    left: 27%;
+    left: 27.5%;
     z-index: 2;
 }
 
@@ -611,18 +611,19 @@ aside#aside-1 section h4 {
     width: 40%;
     top: 5%;
     border-radius: 5%;
-    transition: all 0.5s;
+    transition: all 0.4s;
+    transition: height 0s;
 }
 #img-1 img:hover {
     left: -3%;
     transition: left 0.4s;
 }
 #img-2 img:hover{
-    height: 110%;
-    width: 50%;
-    left: 25%;
-    top: -5%;
-    transition: top 0.4s;
+    height: 94%;
+    top: 3%;
+    width: 48%;
+    left: 26%;
+    transition: all 0.4s;
 }
 #img-3 img:hover {
     right: -3%;
