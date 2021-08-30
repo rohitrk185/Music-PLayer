@@ -412,7 +412,6 @@ footer i{
     width: 70%;
 }
 
-
 #controls-1 span:nth-child(3) i{
     font-size: 0.95em;
 }
@@ -512,6 +511,7 @@ footer i{
         padding: 0 5px;
     }    
     #like-dislike i {
+        font-size: 1.1em;
         margin: 0 5px;    
     }
 
