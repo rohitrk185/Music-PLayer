@@ -316,7 +316,7 @@ nav span, #bottom-controls span {
 
 /* --- bottom player(which is fixed at the bottom) --- */ 
 #bottom-controls {
-    display: none !important;
+    display: none;
     width: 98%;
     background-color: var(--black);
     height: 60px;
@@ -324,24 +324,22 @@ nav span, #bottom-controls span {
     color: var(--white);
     position: fixed;
     bottom: 0;
-    left: 1%;
     margin: auto;
 }
 #bottom-controls:target {
-    position: fixed;
-    bottom: 0;
     z-index: 200;
-    display: inline-block !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
 
 footer {
     width: 100%;
-    padding: 0 5%;
+    padding: 0 2%;
     position: relative;
-    top: 2px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #text {
@@ -358,44 +356,15 @@ footer i{
     position: relative;
     margin-left: 10px;
     top: -15px;
+    padding: 0 5px;
 }
+
 #like-dislike i:hover {
     color: var(--orange);
 }
 
 #like-dislike i:nth-child(3) {
     display: none;
-}
-
-#controls{
-    position: absolute;
-    left: 40%;
-}
-
-#controls span {
-    display: inline-block;
-    padding: 6px 20px;
-    padding-bottom: 0;
-}
-
-#controls-1 span:nth-child(3) {
-    padding-left: 10px !important;
-}
-
-#controls-2 {
-    position: relative;
-    top: -25px;
-    left: -30px;
-    padding: 2px 0;
-}
-
-#prev-play-next i:not(:nth-child(1)){
-    display: inline-block;
-    padding-left: 10px;
-}
-
-#controls-2 span:not(:nth-child(2)) {
-    font-size: 0.7em;
 }
 
 /* customizing the input[type="range"] */
@@ -428,10 +397,34 @@ footer i{
   background: var(--orange);
 }
 
-#extra {
-    position: absolute;
-    right: 1%;
-    top: 30%;
+/* controls of bottom Controls */
+#controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+#controls-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+
+#controls-1 span:nth-child(3) i{
+    font-size: 0.95em;
+}
+
+
+#prev-play-next i:not(:nth-child(1)){
+    display: inline-block;
+    padding-left: 10px;
+}
+
+#controls-2 span:not(:nth-child(2)) {
+    font-size: 0.7em;
 }
 
 #extra span {
@@ -457,22 +450,12 @@ footer i{
 }
 
 @media screen and (max-width: 880px) {
-    #bottom-controls {
-        width: 90%;
-        left: 5%;
-    }
     #extra {
         display: none;
-    }
-    #controls {
-        left: 55%;    
     }
 }
 
 @media screen and (max-width: 768px) {
-    #controls {
-        left: 50%;
-    }
     #text h4, #text h5{
         font-size: 0.8em;
     }
@@ -482,9 +465,6 @@ footer i{
     #bottom-controls {
         width: 98%;
         left: 1%;
-    }
-    #controls {
-        left: 45%;
     }
 }
 
@@ -528,8 +508,11 @@ footer i{
     #like-dislike {
         position: absolute;
         right: 2%;
-        top: 15%;
+        top: 30%;
         padding: 0 5px;
+    }    
+    #like-dislike i {
+        margin: 0 5px;    
     }
 
     #like-dislike i:nth-child(2) {
