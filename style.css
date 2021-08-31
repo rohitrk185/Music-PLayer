@@ -709,10 +709,11 @@ aside#aside-1 section h4 {
 }
 
 .album-image i{
-    z-index: 1;
+    z-index: 1; 
     position: absolute;
-    top: 45%;
-    left: 47%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: none;
 }
 
@@ -1017,7 +1018,7 @@ aside#aside-1 section h4 {
 .latest .box-container .box{
     height: 110px;
     width: 110px;
-    margin: 0px 5px 50px 0px;
+    margin: 0px 0px 50px 0px;
 }
 
 .latest .box-container .box:hover h5 {
@@ -1048,8 +1049,7 @@ aside#aside-2 {
     width: 28%;
     height: 500px;
     display: inline-block;
-    margin-top: 25vh;
-    margin: 2% 0 0 1%;
+    margin-left: 1%;
     padding: 5px 10px;
     position: absolute;
     overflow-y: scroll;
@@ -1062,6 +1062,13 @@ aside#aside-2::-webkit-scrollbar {
 aside#aside-2 {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+#nav-bottom {
+    position: sticky;
+    bottom: 2%;
+    left: 50%;
+    z-index: 10;
 }
 
 @media screen and (max-width: 676px) {
@@ -1085,8 +1092,8 @@ aside#aside-2 #head{
 }
 
 #head #option {
-    top: 20px;
-    right: -40px;
+    top: 35px;
+    right: 0px;
 }
 
 #head h4, #head h6 {
@@ -1126,8 +1133,4 @@ aside#aside-2 #head{
 
 #queue-items .album-image i {
     font-size: 0.7em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
