@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>--Artist--</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style_artist.css">
+</head>
+<body>
+    <div id="nav-container"> <!-- a container to hold nav elements-->
+          <!-- 2 nav elements so that the required content is placed at 2 opposite ends-->
+        <nav id="nav-1">
+            <span id="logo">
+                <a href="#"><img src="images/logo.png" alt="logo" class="image hover"/> </a>
+            </span>
+            <span class="logo-text">
+                <h3 class="text-1">-Music</h3>
+                <h3 class="text-2">Player-</h3>
+            </span>
+            <span id="favourites">
+                <span class="hover">
+                    <i class="fas fa-heart"></i><nbsp> Favourites 
+                    <i class="fas fa-expand-alt"></i>
+                <span>
+            </span>
+        </nav>
+
+        <nav id="nav-2">
+            <span id="search"> 
+                <i class="fas fa-search hover" id="search-icon"></i> 
+                <input type="text" placeholder="Search">
+                <i class="fas fa-microphone hover" id="mic-icon"></i>
+            </span>
+            <span id="notification"> <i class="fas fa-bell hover"></i> </span>
+            <span class="profile-img">
+                <img src="images/dp.jfif" alt="profile image" class="image rounded hover">
+            </span>
+        </nav>
+    </div>
+
+    <div id="main-container">
+        <main>
+            <aside id="aside-1">
+                <section id="artist">
+                    <div id="artist-image" class="rounded">
+                        <img src="images/artists/DVLM.jpg" class="rounded">
+                    </div>
+                    <div id="artist-details">
+                        <span>
+                            <span class="white" id="title"> 
+                                <h3>Dimitri Vegas & Like Mike</h3>
+                                <h6 class="text-2">4M Followers</h6>
+                                <h6 class="text-2">DJ Duo</h6>
+                            </span>
+                            <p class="white text-2">Laboris qui in sint consectetur excepteur eiusmod duis aliqua dolor irure tempor mollit elit consequat pariatur exercitation aliqua aliqua. Culpa id et. Ex cillum sit sed. Incididunt occaecat. Culpa id et. Ex cillum sit sed. Incididunt occaecat.</p>
+                        </span>
+                        <span>
+                            <span>
+                                <button class="white hover" type="button">Play All</button>
+                                <button class="white hover" type="button">Follow</button>
+                            </span>
+                            <p class="white">250 Tracks | 5 Albums</p>
+                        </span>
+                    </div>
+                </section>
+
+                <section id="songs"> 
+                    <div class="items">
+                        <div id="queue-item-1">
+                            <span>
+                                <span class="count orange"><h6>01</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/WIGU.jpg">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> <h5 class="orange hover hover-underline">When I Grow Up</h5> </a>
+                                    <h6 class="orange text-2">Dimitri Vegas & Like Mike</h6>
+                                </span>
+                            </span>
+                            <span class="song-options">
+                                <i class="far fa-heart white hover-orange"></i>
+                                <i class="fas fa-plus white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-2">
+                            <span>
+                                <span class="count orange"><h6>02</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/WIGU.jpg">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> <h5 class="orange hover hover-underline">When I Grow Up</h5> </a>
+                                    <h6 class="orange text-2">Dimitri Vegas & Like Mike</h6>
+                                </span>
+                            </span>
+                            <span class="song-options">
+                                <i class="far fa-heart white hover-orange"></i>
+                                <i class="fas fa-plus white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-3">
+                            <span>
+                                <span class="count orange"><h6>03</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/WIGU.jpg">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> <h5 class="orange hover hover-underline">When I Grow Up</h5> </a>
+                                    <h6 class="orange text-2">Dimitri Vegas & Like Mike</h6>
+                                </span>
+                            </span>
+                            <span class="song-options">
+                                <i class="far fa-heart white hover-orange"></i>
+                                <i class="fas fa-plus white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-4">
+                            <span>
+                                <span class="count orange"><h6>04</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/WIGU.jpg">
+                                        <i class="fas fa-play white"></i>
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <a href="#bottom-controls"> <h5 class="orange hover hover-underline">When I Grow Up</h5> </a>
+                                        <h6 class="orange text-2">Dimitri Vegas & Like Mike</h6>
+                                </span>
+                            </span>
+                            <span class="song-options">
+                                <i class="far fa-heart white hover-orange"></i>
+                                <i class="fas fa-plus white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-5">
+                            <span>
+                                <span class="count orange"><h6>05</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/WIGU.jpg">
+                                            <i class="fas fa-play white"></i>
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <a href="#bottom-controls"> <h5 class="orange hover hover-underline">When I Grow Up</h5> </a>
+                                        <h6 class="orange text-2">Dimitri Vegas & Like Mike</h6>
+                                </span>
+                            </span>
+                            <span class="song-options">
+                                <i class="far fa-heart white hover-orange"></i>
+                                <i class="fas fa-plus white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-6">
+                            <span>
+                                <span class="count orange"><h6>06</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/WIGU.jpg">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                    </span>
+                                    <span>
+                                        <a href="#bottom-controls"> 
+                                            <h5 class="orange hover hover-underline">When I Grow Up</h5> </a>
+                                        <h6 class="orange text-2">Dimitri Vegas & Like Mike</h6>
+                                    </span>
+                                </span>
+                            <span class="song-options">
+                                <i class="far fa-heart white hover-orange"></i>
+                                <i class="fas fa-plus white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-7">
+                            <span>
+                                <span class="count orange"><h6>07</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/WIGU.jpg">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> <h5 class="orange hover hover-underline">When I Grow Up</h5> </a>
+                                    <h6 class="orange text-2">Dimitri Vegas & Like Mike</h6>
+                                </span>
+                            </span>
+                            <span class="song-options">
+                                <i class="far fa-heart white hover-orange"></i>
+                                <i class="fas fa-plus white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-8">
+                            <span>
+                                <span class="count orange"><h6>08</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/WIGU.jpg">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> 
+                                        <h5 class="orange hover hover-underline">When I Grow Up</h5> </a>
+                                        <h6 class="orange text-2">Dimitri Vegas & Like Mike</h6>
+                                    </a>
+                                </span>
+                            </span>
+                            <span class="song-options">
+                                <i class="far fa-heart white hover-orange"></i>
+                                <i class="fas fa-plus white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-9">
+                            <span>
+                                <span class="count orange"><h6>09</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/WIGU.jpg">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> 
+                                        <h5 class="orange hover hover-underline">When I Grow Up</h5> </a>
+                                        <h6 class="orange text-2">Dimitri Vegas & Like Mike</h6>
+                                </span>
+                            </span>
+                            <span class="song-options">
+                                <i class="far fa-heart white hover-orange"></i>
+                                <i class="fas fa-plus white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-10">
+                            <span>
+                                <span class="count orange"><h6>10</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/WIGU.jpg">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> 
+                                        <h5 class="orange hover hover-underline">When I Grow Up</h5> </a>
+                                        <h6 class="orange text-2">Dimitri Vegas & Like Mike</h6>
+                                </span>
+                            </span>
+                            <span class="song-options">
+                                <i class="far fa-heart white hover-orange"></i>
+                                <i class="fas fa-plus white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-11">
+                            <span>
+                                <span class="count orange"><h6>11</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/WIGU.jpg">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> 
+                                        <h5 class="orange hover hover-underline">When I Grow Up</h5> </a>
+                                        <h6 class="orange text-2">Dimitri Vegas & Like Mike</h6>
+                                </span>
+                            </span>
+                            <span class="song-options">
+                                <i class="far fa-heart white hover-orange"></i>
+                                <i class="fas fa-plus white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-12">
+                            <span>
+                                <span class="count orange"><h6>12</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/WIGU.jpg">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> 
+                                        <h5 class="orange hover hover-underline">When I Grow Up</h5> </a>
+                                        <h6 class="orange text-2">Dimitri Vegas & Like Mike</h6>
+                                </span>
+                            </span>
+                            <span class="song-options">
+                                <i class="far fa-heart white hover-orange"></i>
+                                <i class="fas fa-plus white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-13">
+                            <span>
+                                <span class="count orange"><h6>13</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/WIGU.jpg">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> 
+                                        <h5 class="orange hover hover-underline">When I Grow Up</h5> </a>
+                                        <h6 class="orange text-2">Dimitri Vegas & Like Mike</h6>
+                                </span>
+                            </span>
+                            <span class="song-options">
+                                <i class="far fa-heart white hover-orange"></i>
+                                <i class="fas fa-plus white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-14">
+                            <span>
+                                <span class="count orange"><h6>14</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/WIGU.jpg">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> 
+                                        <h5 class="orange hover hover-underline">When I Grow Up</h5> </a>
+                                        <h6 class="orange text-2">Dimitri Vegas & Like Mike</h6>
+                                </span>
+                            </span>
+                            <span class="song-options">
+                                <i class="far fa-heart white hover-orange"></i>
+                                <i class="fas fa-plus white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-15">
+                            <span>
+                                <span class="count orange"><h6>15</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/WIGU.jpg">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> 
+                                        <h5 class="orange hover hover-underline">When I Grow Up</h5> </a>
+                                        <h6 class="orange text-2">Dimitri Vegas & Like Mike</h6>
+                                </span>
+                            </span>
+                            <span class="song-options">
+                                <i class="far fa-heart white hover-orange"></i>
+                                <i class="fas fa-plus white hover-orange"></i>
+                            </span>
+                        </div>
+
+                </section>
+
+            </aside>
+
+
+            <aside id="aside-2">
+                <div id="sim-artists">
+                    <span class="head">
+                        <h3 class="white text-left">Similar Artists</h3>
+                        <a href="#option"> 
+                            <h6 class="white text-2 text-right hover-orange">View All</h6>
+                        </a>
+                    </span>
+                    <div class="items">
+                        <div id="queue-item-1">
+                            <span>
+                                <span class="count orange"><h6>01</h6></span>
+                                <span class="album-image hover">
+                                    <img src="images/artists/ariana.jfif">
+                                </span>
+                                <span>
+                                    <h5 class="orange hover hover-underline">Ariana Grande</h5>
+                                    <h6 class="orange text-2">Pop Singer</h6>
+                                </span>
+                            </span>
+                            <span>
+                                <button>
+                                    <i class="fas fa-ellipsis-h orange hover"></i>
+                                </button>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-2">
+                            <span>
+                                <span class="count orange"><h6>02</h6></span>
+                                <span class="album-image hover">
+                                    <img src="images/artists/madison.jfif">
+                                </span>
+                                <span>
+                                    <h5 class="orange hover hover-underline">Madison Beer</h5>
+                                    <h6 class="orange text-2">Pop Singer</h6>
+                                </span>
+                            </span>
+                            <span>
+                                <button>
+                                    <i class="fas fa-ellipsis-h orange hover"></i>
+                                </button>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-3">
+                            <span>
+                                <span class="count orange"><h6>03</h6></span>
+                                <span class="album-image hover">
+                                    <img src="images/artists/avicii.jfif">
+                                </span>
+                                <span>
+                                    <h5 class="orange hover hover-underline">Avicii</h5>
+                                    <h6 class="orange text-2">Pop Singer</h6>
+                                </span>
+                            </span>
+                            <span>
+                                <button>
+                                    <i class="fas fa-ellipsis-h orange hover"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>    
+                    <span class="head">
+                        <h3 class="white text-left">Recently Played</h3>
+                        <a href="#option"> 
+                            <h6 class="white text-2 text-right hover-orange">View All</h6>
+                        </a>
+                    </span>
+                    <div class="items">
+                        <div id="queue-item-1">
+                            <span>
+                                <span class="count orange"><h6>01</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/latest/ChasingStars.png">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
+                                    <h6 class="orange text-2">Marshmello</h6>
+                                </span>
+                            </span>
+                            <span>
+                                <i class="far fa-heart white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-2">
+                            <span>
+                                <span class="count orange"><h6>02</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/latest/ChasingStars.png">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
+                                    <h6 class="orange text-2">Marshmello</h6>
+                                </span>
+                            </span>
+                            <span>
+                                <i class="far fa-heart white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-3">
+                            <span>
+                                <span class="count orange"><h6>03</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/latest/ChasingStars.png">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
+                                    <h6 class="orange text-2">Marshmello</h6>
+                                </span>
+                            </span>
+                            <span>
+                                <i class="far fa-heart white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-4">
+                            <span>
+                                <span class="count orange"><h6>04</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/latest/ChasingStars.png">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
+                                    <h6 class="orange text-2">Marshmello</h6>
+                                </span>
+                            </span>
+                            <span>
+                                <i class="far fa-heart white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-5">
+                            <span>
+                                <span class="count orange"><h6>05</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/latest/ChasingStars.png">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
+                                    <h6 class="orange text-2">Marshmello</h6>
+                                </span>
+                            </span>
+                            <span>
+                                <i class="far fa-heart white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-6">
+                            <span>
+                                <span class="count orange"><h6>06</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/latest/ChasingStars.png">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
+                                    <h6 class="orange text-2">Marshmello</h6>
+                                </span>
+                            </span>
+                            <span>
+                                <i class="far fa-heart white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-7">
+                            <span>
+                                <span class="count orange"><h6>07</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/latest/ChasingStars.png">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
+                                    <h6 class="orange text-2">Marshmello</h6>
+                                </span>
+                            </span>
+                            <span>
+                                <i class="far fa-heart white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-8">
+                            <span>
+                                <span class="count orange"><h6>08</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/latest/ChasingStars.png">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
+                                    <h6 class="orange text-2">Marshmello</h6>
+                                </span>
+                            </span>
+                            <span>
+                                <i class="far fa-heart white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-9">
+                            <span>
+                                <span class="count orange"><h6>09</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/latest/ChasingStars.png">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
+                                    <h6 class="orange text-2">Marshmello</h6>
+                                </span>
+                            </span>
+                            <span>
+                                <i class="far fa-heart white hover-orange"></i>
+                            </span>
+                        </div>
+
+                        <div id="queue-item-10">
+                            <span>
+                                <span class="count orange"><h6>10</h6></span>
+                                <span class="album-image hover"> 
+                                    <a href="#bottom-controls">
+                                        <img class="shadow" src="images/latest/ChasingStars.png">
+                                        <i class="fas fa-play white"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
+                                    <h6 class="orange text-2">Marshmello</h6>
+                                </span>
+                            </span>
+                            <span>
+                                <i class="far fa-heart white hover-orange"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#queue-item-10"> <i class="fas fa-chevron-circle-down white" id="nav-bottom"></i> </a>
+            </aside>
+
+        </main>
+    </div>
+
+
+
+    <div id="bottom-controls">
+        <footer>
+            <div id="song-details">
+                <span id="album-pic"> <img src="images/latest/ChasingStars.png" alt="Eternal Atake" class="image hover"> </span>
+                <span id="text">
+                    <h4 style="font-weight: 350;" class="hover hover-orange hover-underline">Chasing Stars</h4>
+                    <h5 style="font-weight: 300; display: inline-block;" class="text-2 hover hover-orange hover-underline">Marshmello</h5>,
+                    <h5 style="font-weight: 300; display: inline-block;" class="text-2 hover hover-orange hover-underline">Alesso</h5>
+                </span>
+                <span id="like-dislike"> 
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-ban"></i>
+                    <i class="fas fa-pause hover hover-orange"></i>
+                </span>
+            </div>
+
+            <div id="controls">
+                <div id="controls-1">
+                    <span>
+                        <i class="fas fa-random hover hover-orange"></i>
+                    </span>
+                    <span id="prev-play-next">
+                        <i class="fas fa-step-backward hover hover-orange"></i>
+                        <i class="fas fa-pause hover hover-orange"></i>
+                        <i class="fas fa-step-forward hover hover-orange"></i>
+                    </span>
+                    <span>
+                        <i class="fas fa-redo hover hover-orange"></i>
+                    </span>
+                </div>
+                <div id="controls-2">
+                    <span class="white"> 00.00</span>
+                    <span class="slider">
+                        <input type="range" min="0" max="100" value="0">
+                    </span>
+                    <span class="white"> 03.30</span>
+                </div>
+            </div>
+
+            <div id="extra">
+                <span>
+                    <i class="fas fa-bars hover hover-orange"></i>
+                </span>
+                <span>
+                    <i class="fas fa-laptop hover hover-orange"></i>
+                </span>
+                <span class="slider" id="volume">
+                    <i class="fas fa-volume-up hover hover-orange"></i>
+                    <input type="range" min="0" max="100" value="50">
+                </span>          
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
