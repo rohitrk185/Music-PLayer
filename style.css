@@ -561,6 +561,9 @@ aside#aside-1 {
         width: 100%;
         margin-right: 0;
         margin-bottom: 3.5vh;
+        display: block;
+        height: auto;
+        overflow-y: visible;
     }
     #main-container {
         width: 98%;
@@ -1063,6 +1066,7 @@ aside#aside-2 {
 
 @media screen and (max-width: 676px) {
     aside#aside-2 {
+        display: block;
         position: relative;
         width: 80%;
         padding-left: 5%;
