@@ -21,15 +21,24 @@ body {
     -moz-user-select: none;    
     -ms-user-select: none;      
     user-select: none;
+    -ms-overflow-styel: none;
+    scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
 
-body {
-    -ms-overflow-styel: none;
-    scrollbar-width: none;
+@media screen and (max-width: 768px) {
+    body {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        font-size: small;
+    }
 }
 
 * {
@@ -48,6 +57,12 @@ p {
 
 a {
     text-decoration: none;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    font-size: 0.9em;
 }
 
 .orange {
@@ -165,16 +180,7 @@ nav span, #bottom-controls span {
 }
 
 /* Media Queries for nav-1*/
-@media screen and (max-width: 992px) {
-    body {
-        font-size: medium;
-    }
-}
-
 @media screen and (max-width: 768px) {
-    body {
-        font-size: medium;
-    }
     #logo img {
         width: 40px;
         height: 40px;
@@ -189,9 +195,6 @@ nav span, #bottom-controls span {
 }
 
 @media screen and (max-width: 576px) {
-    body {
-        font-size: small;
-    }
     #logo img {
         width: 35px;
         height: 35px;
@@ -220,7 +223,7 @@ nav span, #bottom-controls span {
     width: 45%;
     padding: 0;
     background-color: var(--dark-blue);
-    padding: 5px;
+    padding: 5px 0;
     border-radius: 20px;
     position: absolute;
     left: 15%;
@@ -252,7 +255,7 @@ nav span, #bottom-controls span {
     background: transparent;
     color: var(--orange);
     width: 60%;
-    margin: 0 10px;
+    margin: 0;
 }
 #search input:hover {
     opacity: 0.9;
@@ -294,7 +297,6 @@ nav span, #bottom-controls span {
         top: 7.5px;
     }
     #search input {
-        margin: 0 10px;
         position: relative;
         top: -2px;
     }
@@ -308,13 +310,16 @@ nav span, #bottom-controls span {
     #search {
         display: none;
     }
-    #notification i{
-        font-size: 0.75em;
-    }
 }
 
 
-/* --- bottom player(which is fixed at the bottom) --- */ 
+/* --- 
+bottom player(which is fixed at the bottom)
+    (has a 3 div`s which are inside a footer tag)
+    (1st part -> song details)
+    (2nd part -> song controls)
+    (3rd part -> extra elements(eg. volume))
+--- */ 
 #bottom-controls {
     display: none;
     width: 98%;
@@ -363,7 +368,7 @@ footer i{
     color: var(--orange);
 }
 
-#like-dislike i:nth-child(3) {
+#like-dislike button:nth-child(3) {
     display: none;
 }
 
@@ -375,7 +380,7 @@ footer i{
 
 .slider input[type=range]{
     height: 4px;
-    width: 12em;
+    width: 11em;
     -webkit-appearance: none;
 }
 
@@ -426,6 +431,7 @@ footer i{
     font-size: 0.7em;
 }
 
+/* --- extra --- */
 #extra span {
     padding: 0 5px;
 }
@@ -483,9 +489,6 @@ footer i{
 }
 
 @media screen and (max-width: 504px){ 
-    #controls-2 span {
-        padding-right: 6px !important;
-    }
     #controls-2 span:nth-child(3) {
         padding-left: 0px !important;
     }
@@ -515,16 +518,18 @@ footer i{
         margin: 0 5px;    
     }
 
-    #like-dislike i:nth-child(2) {
+    #like-dislike button:nth-child(2) {
         display: none;
     }
-    #like-dislike i:nth-child(3) {
+    #like-dislike button:nth-child(3) {
         display: initial;
     }
 }
 
-
-/*  --- main --- */
+/* --- 
+    main(containing both 2 aside sections one for left container
+    and the other for the right container)
+--- */
 #main-container {
     margin: 0 auto;
     margin-top: 100px;
@@ -533,7 +538,6 @@ footer i{
     height: 50% !important;
     overflow-y: hidden;
 }
-
 
 main {
     width: 100%;
@@ -549,6 +553,7 @@ aside#aside-1 {
     overflow-y: scroll;
 }
 
+/* to hide the scrollbar */ 
 aside#aside-1::-webkit-scrollbar {
     display: none;
 }
@@ -580,7 +585,8 @@ aside#aside-1 section h4 {
     color: var(--orange);
 }
 
-  /*  --- carousel SECTION ---  */
+
+/*  --- carousel SECTION ---  */
 #carousel {
     width: 85%;
     margin-left: 7%;
@@ -634,7 +640,7 @@ aside#aside-1 section h4 {
     transition: right 0.4s;
 }
 
-/* media queries for carousel */
+/* media queries for carousel SECTION */
 @media screen and (max-width: 1000px) {
     #carousel {
         height: 200px;
@@ -685,7 +691,7 @@ aside#aside-1 section h4 {
 }
 
 
-/*  --- latest release  SECTION--- */
+/*  --- latest release SECTION--- */
 .box-container {
     display: flex;
     justify-content: space-between;
@@ -722,7 +728,7 @@ aside#aside-1 section h4 {
     display: initial;
 }
 
-/* media queries for latest section */
+/* media queries for latest SECTION */
 @media screen and (max-width: 1035px) {
     #latest-release .box {
         height: 140px;
@@ -773,6 +779,7 @@ aside#aside-1 section h4 {
     left: -1%;
 }
 
+/* to position the elements at the top-end of the container */
 .pos-right {
     display: flex;
     flex-direction: column;
@@ -782,6 +789,7 @@ aside#aside-1 section h4 {
     position: relative;
 }
 
+/* options box displayed on clicking the 3dots in latest SECTION */
 .options {
     background-color: var(--white);
     display: none;
@@ -846,6 +854,7 @@ aside#aside-1 section h4 {
 #popular-artists .box:hover h6 {
     text-decoration: underline;
 }
+
 
 /* ---genre SECTION--- */ 
 #genres {
@@ -921,7 +930,7 @@ aside#aside-1 section h4 {
     letter-spacing: 0.5px;
 }
 
-/*  --- media querie for popular-artists and genres SECTION --- */
+/*  --- media queries for popular-artists and genres SECTION --- */
 @media screen and (max-width: 768px) {
     #popular-artists .box {
         height: 90px;
@@ -1045,7 +1054,9 @@ aside#aside-1 section h4 {
 }
 
 
-/* --- aside SECTION --- */
+/* --- 
+    aside-2 SECTION (right part of the webpage) 
+--- */
 aside#aside-2 {
     width: 28%;
     height: 500px;
@@ -1063,13 +1074,6 @@ aside#aside-2::-webkit-scrollbar {
 aside#aside-2 {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-}
-
-#nav-bottom {
-    position: sticky;
-    bottom: 2%;
-    left: 50%;
-    z-index: 10;
 }
 
 @media screen and (max-width: 676px) {
