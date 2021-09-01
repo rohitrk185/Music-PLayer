@@ -23,7 +23,6 @@ body {
     user-select: none;
     -ms-overflow-styel: none;
     scrollbar-width: none;
-    margin: 0;
 }
 
 body::-webkit-scrollbar {
@@ -53,9 +52,7 @@ img {
 }
 
 p {
-    font-size: 0.8em;
-    font-weight: 100;
-    text-align: justify;
+    font-size: 0.9em;
 }
 
 a {
@@ -65,7 +62,7 @@ a {
 button {
     border: 0;
     background-color: transparent;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .orange {
@@ -76,6 +73,17 @@ button {
     color: var(--white);
 }
 
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    float: right;
+}
 
 .hover:hover {
     cursor: pointer;
@@ -103,12 +111,9 @@ button {
     box-shadow: 0.5px 0.5px 8px 0px rgba(255,165,0, 0.4);
 }
 
-.text-right {
-    float: right;
-}
-
 h3, h4, h5, h6 {
     margin: 0;
+    padding: 0;
 }
 
 .rounded {
@@ -218,7 +223,7 @@ nav span, #bottom-controls span {
     width: 45%;
     padding: 0;
     background-color: var(--dark-blue);
-    padding: 5px;
+    padding: 5px 0;
     border-radius: 20px;
     position: absolute;
     left: 15%;
@@ -250,7 +255,7 @@ nav span, #bottom-controls span {
     background: transparent;
     color: var(--orange);
     width: 60%;
-    margin: 0 10px;
+    margin: 0;
 }
 #search input:hover {
     opacity: 0.9;
@@ -292,7 +297,6 @@ nav span, #bottom-controls span {
         top: 7.5px;
     }
     #search input {
-        margin: 0 10px;
         position: relative;
         top: -2px;
     }
@@ -306,22 +310,22 @@ nav span, #bottom-controls span {
     #search {
         display: none;
     }
-    #notification i{
-        font-size: 0.75em;
-    }
 }
 
 
 /* --- bottom player(which is fixed at the bottom) --- */ 
 #bottom-controls {
+    display: none;
     width: 98%;
+    background-color: var(--black);
     height: 60px;
+    border-radius: 5px;
+    color: var(--white);
     position: fixed;
     bottom: 0;
     margin: auto;
-    border-radius: 5px;
-    background-color: var(--black);
-    color: var(--white);
+}
+#bottom-controls:target {
     z-index: 200;
     display: flex;
     flex-direction: column;
@@ -358,7 +362,7 @@ footer i{
     color: var(--orange);
 }
 
-#like-dislike i:nth-child(3) {
+#like-dislike button:nth-child(3) {
     display: none;
 }
 
@@ -370,7 +374,7 @@ footer i{
 
 .slider input[type=range]{
     height: 4px;
-    width: 12em;
+    width: 11em;
     -webkit-appearance: none;
 }
 
@@ -421,6 +425,7 @@ footer i{
     font-size: 0.7em;
 }
 
+/* --- extra --- */
 #extra span {
     padding: 0 5px;
 }
@@ -478,9 +483,6 @@ footer i{
 }
 
 @media screen and (max-width: 504px){ 
-    #controls-2 span {
-        padding-right: 6px !important;
-    }
     #controls-2 span:nth-child(3) {
         padding-left: 0px !important;
     }
@@ -510,10 +512,10 @@ footer i{
         margin: 0 5px;    
     }
 
-    #like-dislike i:nth-child(2) {
+    #like-dislike button:nth-child(2) {
         display: none;
     }
-    #like-dislike i:nth-child(3) {
+    #like-dislike button:nth-child(3) {
         display: initial;
     }
 }
@@ -629,7 +631,7 @@ aside#aside-1 {
     box-shadow: 0 0 8px 0px var(--grey);
 }
 
-#songs #queue-items div{
+#songs .items div{
     background-color: var(--dark2-blue);
     padding: 1%;
     margin: 0.8% 0;
@@ -690,13 +692,6 @@ aside#aside-2::-webkit-scrollbar {
 aside#aside-2 {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-}
-
-#nav-bottom {
-    position: sticky;
-    bottom: 2%;
-    left: 50%;
-    z-index: 10;
 }
 
 @media screen and (max-width: 676px) {
