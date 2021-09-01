@@ -808,23 +808,22 @@ aside#aside-1 section h4 {
     top: 14%;
 }
 
-.options p {
+.options button {
     color: var(--grey);
     padding: 5px 0 0 5px;
-    margin-top: 0;
-    margin-bottom: 7px;
+    margin: 0 0 7px 0;
 }
 
-.options p:not(:nth-child(1)) {
+.options button:not(:nth-child(1)) {
     padding-top: 0;
 }
 
-.options p:hover {
+.options button:hover {
     color: var(--black);
     font-weight: 700;
 }
 
-.options p:not(:last-child) {
+.options button:not(:last-child) {
     border-bottom: 1px solid #000;
     padding-bottom: 2%;
 }
@@ -1094,6 +1093,27 @@ aside#aside-2 #head{
     position: relative;
     margin-bottom: 15px;
     padding-top: 15px;    
+}
+
+.options p {
+    color: var(--grey);
+    padding: 5px 0 0 5px;
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+
+.options p:not(:nth-child(1)) {
+    padding-top: 0;
+}
+
+.options p:hover {
+    color: var(--black);
+    font-weight: 700;
+}
+
+.options p:not(:last-child) {
+    border-bottom: 1px solid #000;
+    padding-bottom: 2%;
 }
 
 #head #option {
