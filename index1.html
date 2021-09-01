@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>--Music PLayer--</title>
+    <title>Music Player</title>
+    <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
@@ -18,36 +22,37 @@
           <!-- 2 nav elements so that the required content is placed at 2 opposite ends-->
         <nav id="nav-1">
             <span id="logo">
-                <a href="#"><img src="images/logo.png" alt="logo" class="image hover"/> </a>
+                <a href="index.html"><img src="images/logo.png" alt="logo" class="image hover"/> </a>
             </span>
             <span class="logo-text">
-                <h3 class="text-1">-Music</h3>
-                <h3 class="text-2">Player-</h3>
+                <h3 class="text-1">Music</h3>
+                <h3 class="text-2">Player</h3>
             </span>
             <span id="favourites">
-                <span class="hover">
-                    <i class="fas fa-heart"></i><nbsp> Favourites 
-                    <i class="fas fa-expand-alt"></i>
-                <span>
+                    <a href="" class="hover orange"> <i class="fas fa-heart"></i><nbsp></nbsp> Favourites </a> 
             </span>
         </nav>
 
         <nav id="nav-2">
             <span id="search"> 
-                <i class="fas fa-search hover" id="search-icon"></i> 
+                <button type="button"> <i class="fas fa-search hover" id="search-icon"></i> </button> 
                 <input type="text" placeholder="Search">
-                <i class="fas fa-microphone hover" id="mic-icon"></i>
+                <button type="button"> <i class="fas fa-microphone hover" id="mic-icon"></i> </button>
             </span>
-            <span id="notification"> <i class="fas fa-bell hover"></i> </span>
+            <span id="notification"> <a><i class="fas fa-bell hover"></i></a> </span>
             <span class="profile-img">
-                <img src="images/dp.jfif" alt="profile image" class="image rounded hover">
+                <a href="">
+                    <img src="images/dp.jfif" alt="profile image" class="image rounded hover">
+                </a>
             </span>
         </nav>
     </div>
 
     <div id="main-container">
         <main>
+            <!-- 1nd aside SECTION (left part of the viewport)-->
             <aside id="aside-1">
+                <!-- carousel SECTION -->
                 <section id="carousel">
                     <span id="img-1"> 
                         <img src="images/carousel/img.jpg" alt="" style="cursor: pointer;">
@@ -60,6 +65,7 @@
                     </span>
                 </section>
 
+                <!-- latest release SECTION -->
                 <section id="latest-release">
                     <h2>Latest Release</h2>
                     <div class="box-container">
@@ -78,10 +84,10 @@
                                 <a href="#option-1"> <i class="fas fa-ellipsis-h orange hover"></i> </a>
                                 <h4> 03.30</h4>
                                 <div class="options" id="option-1">
-                                    <p class="hover"> <i class="fas fa-play"></i> Play Now</p>
-                                    <p class="hover"> <i class="fas fa-plus"></i> Add To Queue</p>
-                                    <p class="hover"> <i class="fas fa-folder-plus"></i> Add To Favourites</p>
-                                    <p class="hover"> <i class="fas fa-info-circle"></i> Get Info</p>
+                                    <button class="hover text-left" type="button"> <i class="fas fa-play"></i> Play Now</button>
+                                    <button class="hover text-left" type="button"> <i class="fas fa-plus"></i> Add To Queue</button>
+                                    <button class="hover text-left" type="button"> <i class="fas fa-folder-plus"></i> Add To Favourites</button>
+                                    <button class="hover text-left" type="button"> <i class="fas fa-info-circle"></i> Get Info</button>
                                 </div>
                             </span>
                         </div>
@@ -101,10 +107,10 @@
                                 <a href="#option-2"> <i class="fas fa-ellipsis-h orange hover"></i> </a>
                                 <h4> 03.30</h4>
                                 <div class="options" id="option-2">
-                                    <p class="hover"> <i class="fas fa-play"></i> Play Now</p>
-                                    <p class="hover"> <i class="fas fa-plus"></i> Add To Queue</p>
-                                    <p class="hover"> <i class="fas fa-folder-plus"></i> Add To Favourites</p>
-                                    <p class="hover"> <i class="fas fa-info-circle"></i> Get Info</p>
+                                    <button class="hover text-left" type="button"> <i class="fas fa-play"></i> Play Now</button>
+                                    <button class="hover text-left" type="button"> <i class="fas fa-plus"></i> Add To Queue</button>
+                                    <button class="hover text-left" type="button"> <i class="fas fa-folder-plus"></i> Add To Favourites</button>
+                                    <button class="hover text-left" type="button"> <i class="fas fa-info-circle"></i> Get Info</button>
                                 </div>
                             </span>
                         </div>
@@ -124,10 +130,10 @@
                                 <a href="#option-3"> <i class="fas fa-ellipsis-h orange hover"></i> </a>
                                 <h4> 03.30</h4>
                                 <div id="option-3" class="options">
-                                    <p class="hover"> <i class="fas fa-play"></i> Play Now</p>
-                                    <p class="hover"> <i class="fas fa-plus"></i> Add To Queue</p>
-                                    <p class="hover"> <i class="fas fa-folder-plus"></i> Add To Favourites</p>
-                                    <p class="hover"> <i class="fas fa-info-circle"></i> Get Info</p>
+                                    <button class="hover text-left" type="button"> <i class="fas fa-play"></i> Play Now</button>
+                                    <button class="hover text-left" type="button"> <i class="fas fa-plus"></i> Add To Queue</button>
+                                    <button class="hover text-left" type="button"> <i class="fas fa-folder-plus"></i> Add To Favourites</button>
+                                    <button class="hover text-left" type="button"> <i class="fas fa-info-circle"></i> Get Info</button>
                                 </div>
                             </span>
                         </div>
@@ -147,16 +153,17 @@
                                 <a href="#option-4"> <i class="fas fa-ellipsis-h orange hover"></i> </a>
                                 <h4> 03.30</h4>
                                 <div class="options" id="option-4">
-                                    <p class="hover"> <i class="fas fa-play"></i> Play Now</p>
-                                    <p class="hover"> <i class="fas fa-plus"></i> Add To Queue</p>
-                                    <p class="hover"> <i class="fas fa-folder-plus"></i> Add To Favourites</p>
-                                    <p class="hover"> <i class="fas fa-info-circle"></i> Get Info</p>
+                                    <button class="hover text-left" type="button"> <i class="fas fa-play"></i> Play Now</button>
+                                    <button class="hover text-left" type="button"> <i class="fas fa-plus"></i> Add To Queue</button>
+                                    <button class="hover text-left" type="button"> <i class="fas fa-folder-plus"></i> Add To Favourites</button>
+                                    <button class="hover text-left" type="button"> <i class="fas fa-info-circle"></i> Get Info</button>
                                 </div>
                             </span>
                         </div>
                     </div>
                 </section>
 
+                <!-- popular artists SECTION -->
                 <section id="popular-artists">
                     <h2> Popular artists </h2>
                     <div class="box-container">
@@ -211,6 +218,7 @@
                     </div>
                 </section>
 
+                <!-- genres SECTION -->
                 <section id="genres">
                     <div class="box" id="g-box"> 
                         <div id="box-1"> </div>
@@ -248,6 +256,7 @@
                     </div>
                 </section>
 
+                <!-- playlists SECTION -->
                 <section id="playlists">
                     <div class="box-container">
                         <span class="hover"> 
@@ -265,6 +274,7 @@
                     </div>
                 </section>
 
+                <!-- latest english SECTION -->
                 <section id="latest-english" class="latest">
                     <h2>Latest English</h2>
                     <div class="box-container">
@@ -362,14 +372,15 @@
                 </section>
             </aside>
 
-
+            <!-- 2nd aside SECTION (right part of the viewport)
+                containing song queue-->
             <aside id="aside-2">    
                 <span id="head">
                     <h4 class="white text-left">My Playlist</h4>
                     <a href="#option"> <h6 class="white text-2 text-right hover-orange">Queue <i class="fas fa-arrow-down"></i></h6> </a>
                     <div class="options" id="option">
-                        <p class="hover">Playlists</p>
-                        <p class="hover">Favourite Songs</p>
+                        <a href="index1.html"> <p class="hover">Playlists</p> </a>
+                        <a href="#"> <p class="hover">Favourite Songs</p> </a>
                     </div>
                 </span>
                 <div id="queue-items">
@@ -562,200 +573,7 @@
                             <i class="far fa-heart white hover-orange"></i>
                         </span>
                     </div>
-
-                    <div id="queue-item-11">
-                        <span>
-                            <span class="count orange"><h6>11</h6></span>
-                            <span class="album-image hover"> 
-                                <a href="#bottom-controls">
-                                    <img class="shadow" src="images/latest/ChasingStars.png">
-                                    <i class="fas fa-play white"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
-                                <h6 class="orange text-2">Marshmello</h6>
-                            </span>
-                        </span>
-                        <span>
-                            <i class="far fa-heart white hover-orange"></i>
-                        </span>
-                    </div>
-
-                    <div id="queue-item-12">
-                        <span>
-                            <span class="count orange"><h6>12</h6></span>
-                            <span class="album-image hover"> 
-                                <a href="#bottom-controls">
-                                    <img class="shadow" src="images/latest/ChasingStars.png">
-                                    <i class="fas fa-play white"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
-                                <h6 class="orange text-2">Marshmello</h6>
-                            </span>
-                        </span>
-                        <span>
-                            <i class="far fa-heart white hover-orange"></i>
-                        </span>
-                    </div>
-
-                    <div id="queue-item-13">
-                        <span>
-                            <span class="count orange"><h6>13</h6></span>
-                            <span class="album-image hover"> 
-                                <a href="#bottom-controls">
-                                    <img class="shadow" src="images/latest/ChasingStars.png">
-                                    <i class="fas fa-play white"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
-                                <h6 class="orange text-2">Marshmello</h6>
-                            </span>
-                        </span>
-                        <span>
-                            <i class="far fa-heart white hover-orange"></i>
-                        </span>
-                    </div>
-
-                    <div id="queue-item-14">
-                        <span>
-                            <span class="count orange"><h6>14</h6></span>
-                            <span class="album-image hover"> 
-                                <a href="#bottom-controls">
-                                    <img class="shadow" src="images/latest/ChasingStars.png">
-                                    <i class="fas fa-play white"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
-                                <h6 class="orange text-2">Marshmello</h6>
-                            </span>
-                        </span>
-                        <span>
-                            <i class="far fa-heart white hover-orange"></i>
-                        </span>
-                    </div>
-
-                    <div id="queue-item-15">
-                        <span>
-                            <span class="count orange"><h6>15</h6></span>
-                            <span class="album-image hover"> 
-                                <a href="#bottom-controls">
-                                    <img class="shadow" src="images/latest/ChasingStars.png">
-                                    <i class="fas fa-play white"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
-                                <h6 class="orange text-2">Marshmello</h6>
-                            </span>
-                        </span>
-                        <span>
-                            <i class="far fa-heart white hover-orange"></i>
-                        </span>
-                    </div>
-
-                    <div id="queue-item-16">
-                        <span>
-                            <span class="count orange"><h6>16</h6></span>
-                            <span class="album-image hover"> 
-                                <a href="#bottom-controls">
-                                    <img class="shadow" src="images/latest/ChasingStars.png">
-                                    <i class="fas fa-play white"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
-                                <h6 class="orange text-2">Marshmello</h6>
-                            </span>
-                        </span>
-                        <span>
-                            <i class="far fa-heart white hover-orange"></i>
-                        </span>
-                    </div>
-
-                    <div id="queue-item-17">
-                        <span>
-                            <span class="count orange"><h6>17</h6></span>
-                            <span class="album-image hover"> 
-                                <a href="#bottom-controls">
-                                    <img class="shadow" src="images/latest/ChasingStars.png">
-                                    <i class="fas fa-play white"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
-                                <h6 class="orange text-2">Marshmello</h6>
-                            </span>
-                        </span>
-                        <span>
-                            <i class="far fa-heart white hover-orange"></i>
-                        </span>
-                    </div>
-
-                    <div id="queue-item-18">
-                        <span>
-                            <span class="count orange"><h6>18</h6></span>
-                            <span class="album-image hover"> 
-                                <a href="#bottom-controls">
-                                    <img class="shadow" src="images/latest/ChasingStars.png">
-                                    <i class="fas fa-play white"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
-                                <h6 class="orange text-2">Marshmello</h6>
-                            </span>
-                        </span>
-                        <span>
-                            <i class="far fa-heart white hover-orange"></i>
-                        </span>
-                    </div>
-
-                    <div id="queue-item-19">
-                        <span>
-                            <span class="count orange"><h6>19</h6></span>
-                            <span class="album-image hover"> 
-                                <a href="#bottom-controls">
-                                    <img class="shadow" src="images/latest/ChasingStars.png">
-                                    <i class="fas fa-play white"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
-                                <h6 class="orange text-2">Marshmello</h6>
-                            </span>
-                        </span>
-                        <span>
-                            <i class="far fa-heart white hover-orange"></i>
-                        </span>
-                    </div>
-
-                    <div id="queue-item-20">
-                        <span>
-                            <span class="count orange"><h6>20</h6></span>
-                            <span class="album-image hover"> 
-                                <a href="#bottom-controls">
-                                    <img class="shadow" src="images/latest/ChasingStars.png">
-                                    <i class="fas fa-play white"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#bottom-controls"> <h5 class="orange hover hover-underline">Chasing Stars</h5> </a>
-                                <h6 class="orange text-2">Marshmello</h6>
-                            </span>
-                        </span>
-                        <span>
-                            <i class="far fa-heart white hover-orange"></i>
-                        </span>
-                    </div>
-                </div>
-                <a href="#queue-item-20"> <i class="fas fa-chevron-circle-down white" id="nav-bottom"></i> </a>
             </aside>
-
         </main>
     </div>
 
@@ -771,24 +589,24 @@
                     <h5 style="font-weight: 300; display: inline-block;" class="text-2 hover hover-orange hover-underline">Alesso</h5>
                 </span>
                 <span id="like-dislike"> 
-                    <i class="far fa-heart"></i>
-                    <i class="fas fa-ban"></i>
-                    <i class="fas fa-pause hover hover-orange"></i>
+                    <button class="hover"> <i class="far fa-heart"></i> </button>
+                    <button class="hover"> <i class="fas fa-ban"></i> </button>
+                    <button class="hover"><i class="fas fa-pause hover hover-orange"></i> </button>
                 </span>
             </div>
 
             <div id="controls">
                 <div id="controls-1">
                     <span>
-                        <i class="fas fa-random hover hover-orange"></i>
+                        <button class="hover"> <i class="fas fa-random hover hover-orange"></i> </button>
                     </span>
                     <span id="prev-play-next">
-                        <i class="fas fa-step-backward hover hover-orange"></i>
-                        <i class="fas fa-pause hover hover-orange"></i>
-                        <i class="fas fa-step-forward hover hover-orange"></i>
+                        <button class="hover"> <i class="fas fa-step-backward hover hover-orange"></i> </button>
+                        <button class="hover"> <i class="fas fa-pause hover hover-orange"></i> </button>
+                        <button class="hover"> <i class="fas fa-step-forward hover hover-orange"></i> </button>
                     </span>
                     <span>
-                        <i class="fas fa-redo hover hover-orange"></i>
+                        <button class="hover"> <i class="fas fa-redo hover hover-orange"></i> </button>
                     </span>
                 </div>
                 <div id="controls-2">
@@ -802,14 +620,14 @@
 
             <div id="extra">
                 <span>
-                    <i class="fas fa-bars hover hover-orange"></i>
+                    <button class="hover"> <i class="fas fa-bars hover hover-orange"></i> </button>
                 </span>
                 <span>
-                    <i class="fas fa-laptop hover hover-orange"></i>
+                    <button class="hover"> <i class="fas fa-laptop hover hover-orange"></i> </button> 
                 </span>
                 <span class="slider" id="volume">
-                    <i class="fas fa-volume-up hover hover-orange"></i>
-                    <input type="range" min="0" max="100" value="50">
+                    <button class="hover"> <i class="fas fa-volume-up hover hover-orange"></i> </button>
+                    <button class="hover"> <input type="range" min="0" max="100" value="50"> </button>
                 </span>          
             </div>
         </footer>
