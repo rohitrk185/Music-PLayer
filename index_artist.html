@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>--Artist--</title>
+    <title>Dimitri Vegas & Like Mike</title>
+    <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" type="text/css" href="style_artist.css">
 </head>
 <body>
@@ -18,29 +22,28 @@
           <!-- 2 nav elements so that the required content is placed at 2 opposite ends-->
         <nav id="nav-1">
             <span id="logo">
-                <a href="#"><img src="images/logo.png" alt="logo" class="image hover"/> </a>
+                <a href="index.html"><img src="images/logo.png" alt="logo" class="image hover"/> </a>
             </span>
             <span class="logo-text">
-                <h3 class="text-1">-Music</h3>
-                <h3 class="text-2">Player-</h3>
+                <h3 class="text-1">Music</h3>
+                <h3 class="text-2">Player</h3>
             </span>
             <span id="favourites">
-                <span class="hover">
-                    <i class="fas fa-heart"></i><nbsp> Favourites 
-                    <i class="fas fa-expand-alt"></i>
-                <span>
+                    <a href="" class="hover orange"> <i class="fas fa-heart"></i><nbsp></nbsp> Favourites </a> 
             </span>
         </nav>
 
         <nav id="nav-2">
             <span id="search"> 
-                <i class="fas fa-search hover" id="search-icon"></i> 
+                <button type="button"> <i class="fas fa-search hover" id="search-icon"></i> </button> 
                 <input type="text" placeholder="Search">
-                <i class="fas fa-microphone hover" id="mic-icon"></i>
+                <button type="button"> <i class="fas fa-microphone hover" id="mic-icon"></i> </button>
             </span>
-            <span id="notification"> <i class="fas fa-bell hover"></i> </span>
+            <span id="notification"> <a><i class="fas fa-bell hover"></i></a> </span>
             <span class="profile-img">
-                <img src="images/dp.jfif" alt="profile image" class="image rounded hover">
+                <a href="">
+                    <img src="images/dp.jfif" alt="profile image" class="image rounded hover">
+                </a>
             </span>
         </nav>
     </div>
@@ -387,7 +390,8 @@
 
             </aside>
 
-
+            <!-- 2nd aside SECTION (right part of the viewport)
+                containing similar artists and recently played sections -->
             <aside id="aside-2">
                 <div id="sim-artists">
                     <span class="head">
@@ -652,12 +656,10 @@
                         </div>
                     </div>
                 </div>
-                <a href="#queue-item-10"> <i class="fas fa-chevron-circle-down white" id="nav-bottom"></i> </a>
             </aside>
 
         </main>
     </div>
-
 
 
     <div id="bottom-controls">
@@ -670,24 +672,24 @@
                     <h5 style="font-weight: 300; display: inline-block;" class="text-2 hover hover-orange hover-underline">Alesso</h5>
                 </span>
                 <span id="like-dislike"> 
-                    <i class="far fa-heart"></i>
-                    <i class="fas fa-ban"></i>
-                    <i class="fas fa-pause hover hover-orange"></i>
+                    <button class="hover"> <i class="far fa-heart"></i> </button>
+                    <button class="hover"> <i class="fas fa-ban"></i> </button>
+                    <button class="hover"><i class="fas fa-pause hover hover-orange"></i> </button>
                 </span>
             </div>
 
             <div id="controls">
                 <div id="controls-1">
                     <span>
-                        <i class="fas fa-random hover hover-orange"></i>
+                        <button class="hover"> <i class="fas fa-random hover hover-orange"></i> </button>
                     </span>
                     <span id="prev-play-next">
-                        <i class="fas fa-step-backward hover hover-orange"></i>
-                        <i class="fas fa-pause hover hover-orange"></i>
-                        <i class="fas fa-step-forward hover hover-orange"></i>
+                        <button class="hover"> <i class="fas fa-step-backward hover hover-orange"></i> </button>
+                        <button class="hover"> <i class="fas fa-pause hover hover-orange"></i> </button>
+                        <button class="hover"> <i class="fas fa-step-forward hover hover-orange"></i> </button>
                     </span>
                     <span>
-                        <i class="fas fa-redo hover hover-orange"></i>
+                        <button class="hover"> <i class="fas fa-redo hover hover-orange"></i> </button>
                     </span>
                 </div>
                 <div id="controls-2">
@@ -701,14 +703,14 @@
 
             <div id="extra">
                 <span>
-                    <i class="fas fa-bars hover hover-orange"></i>
+                    <button class="hover"> <i class="fas fa-bars hover hover-orange"></i> </button>
                 </span>
                 <span>
-                    <i class="fas fa-laptop hover hover-orange"></i>
+                    <button class="hover"> <i class="fas fa-laptop hover hover-orange"></i> </button> 
                 </span>
                 <span class="slider" id="volume">
-                    <i class="fas fa-volume-up hover hover-orange"></i>
-                    <input type="range" min="0" max="100" value="50">
+                    <button class="hover"> <i class="fas fa-volume-up hover hover-orange"></i> </button>
+                    <button class="hover"> <input type="range" min="0" max="100" value="50"> </button>
                 </span>          
             </div>
         </footer>
